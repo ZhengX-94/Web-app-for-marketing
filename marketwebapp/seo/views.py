@@ -12,6 +12,6 @@ def index(request):
         website = request.POST["websitetoseo"]
         print("query is: ", website)
         output = analyzer.analyze(website)
-        print(output["pages"][0]["warnings"])
+        # print(output["pages"][0]["warnings"])
         return render(request, "seo/result.html", {"result": output})
 
